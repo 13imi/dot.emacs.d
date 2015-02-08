@@ -1,0 +1,7 @@
+log/*
+.cask/*
+eshell/lastdir
+eshell/history
+recentf
+url/*
+/.hl-save
