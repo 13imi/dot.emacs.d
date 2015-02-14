@@ -2,6 +2,8 @@
 (define-key dired-mode-map (kbd "s") 'dired-isearch+)
 (setq dired-isearch+-return "\C-f")
 
+;; (add-hook 'dired-mode-hook #'dired-hide-details-mode)
+
 (require 'dired-subtree)
 (define-key dired-mode-map (kbd "i") 'dired-subtree-insert)
 (define-key dired-mode-map (kbd "I") 'dired-subtree-remove)
@@ -11,6 +13,16 @@
 (require 'dired-narrow)
 (define-key dired-mode-map (kbd ";") 'dired-narrow)
 
+(require 'dired-details)
+(dired-details-install)
+(setq dired-details-hidden-string "")
+(setq dired-details-hide-link-targets nil)
+
+(defadvice find-dired-sentinel (after dired-details (proc state) activate)
+  "find-diredでもdired-detailsを使えるようにする"
+  (ignore-errors
+    (with-current-buffer (process-buffer proc)
+      (dired-details-activate))))
 
 ;; (require 'dired-ex-isearch)
 ;; (define-key dired-mode-map "s" 'dired-ex-isearch)

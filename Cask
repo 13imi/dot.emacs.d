@@ -17,6 +17,7 @@
 (depends-on "dired+")
 (depends-on "dired-hacks" :git "https://github.com/Fuco1/dired-hacks.git")
 (depends-on "dired-isearch+" :git "https://github.com/ganmacs/dired-isearch-plus")
+(depends-on "dired-details")
 
 ;; auto-complete
 (depends-on "auto-complete")
@@ -67,3 +68,18 @@
 (depends-on "coffee-mode")
 (depends-on "php-mode")
 (depends-on "tuareg")
+
+;; shift
+(depends-on "ace-jump-mode")
+(depends-on "point-undo")
+
+;; looks
+(depends-on "yascroll")
+(depends-on "hlinum")
+(depends-on "powerline")
+(depends-on "rainbow-mode")
+(depends-on "highlight-indentation")
+(depends-on "stripe-buffer")
+
+(depends-on "rotate")
+(depends-on "goto-chg")

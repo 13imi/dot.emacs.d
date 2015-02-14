@@ -16,7 +16,7 @@
 ;; 英語font
 (set-face-attribute 'default nil
                     :family "Menlo" ;; font
-                    :height 130)    ;; font size
+                    :height 120)    ;; font size
 ;; 日本語font
 (set-fontset-font
  nil 'japanese-jisx0208
