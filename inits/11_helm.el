@@ -7,6 +7,16 @@
 (global-set-key (kbd "M-i") 'helm-imenu)
 (global-set-key (kbd "C-x C-h j") 'helm-c-apropos)
 
+;; helm-for-files の source から locate を外す
+(setq helm-for-files-preferred-list
+      '(helm-source-buffers-list
+        helm-source-recentf
+        helm-source-bookmarks
+        helm-source-file-cache
+        helm-source-files-in-current-dir
+        ; helm-source-locate
+        ))
+
 ;; C-h でバックスペースと同じように文字を削除できるようにする
 (define-key helm-map (kbd "C-h") 'delete-backward-char)
 
@@ -63,3 +73,7 @@
 (setq recentf-auto-cleanup 10)
 (setq recentf-auto-save-timer (run-with-idle-timer 30 t 'recentf-save-list))
 (recentf-mode 1)
+
+;; descbinds
+(require 'helm-descbinds)
+(global-set-key (kbd "C-'") 'helm-descbinds)

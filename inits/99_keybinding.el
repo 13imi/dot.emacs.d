@@ -79,7 +79,7 @@
 (global-set-key (kbd "s-b") 'backward-sexp)
 
 ;; window分割
-(global-set-key (kbd "s-0") 'delete-window)
+(global-set-key (kbd "s-=") 'delete-window)
 (global-set-key (kbd "s-2") 'split-window-below)
 (global-set-key (kbd "s-3") 'split-window-right)
 

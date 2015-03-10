@@ -11,6 +11,7 @@
 (depends-on "helm-swoop")
 (depends-on "helm-ls-git")
 (depends-on "helm-ag")
+(depends-on "helm-descbinds")
 (depends-on "emacs-git-grep" :git "https://github.com/ganmacs/emacs-git-grep.git")
 
 ;; dired
@@ -80,6 +81,7 @@
 (depends-on "rainbow-mode")
 (depends-on "highlight-indentation")
 (depends-on "stripe-buffer")
+(depends-on "idle-highlight-mode")
 
 (depends-on "rotate")
 (depends-on "goto-chg")
