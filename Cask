@@ -47,6 +47,7 @@
 (depends-on "undo-tree")
 (depends-on "drag-stuff")
 (depends-on "use-package")
+(depends-on "exec-path-from-shell")
 
 ;; flycheck
 (depends-on "flycheck")
@@ -58,6 +59,9 @@
 (depends-on "rbenv")
 (depends-on "rhtml-mode")
 (depends-on "yaml-mode")
+
+;; go
+(depends-on "go-mode")
 
 ;; markup
 (depends-on "web-mode")

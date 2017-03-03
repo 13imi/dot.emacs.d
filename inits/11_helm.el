@@ -4,7 +4,7 @@
 (global-set-key (kbd "C-;") 'helm-for-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-(global-set-key (kbd "M-i") 'helm-imenu)
+s(global-set-key (kbd "M-i") 'helm-imenu)
 (global-set-key (kbd "C-x C-h j") 'helm-c-apropos)
 
 ;; helm-for-files の source から locate を外す
@@ -45,7 +45,7 @@
 (global-set-key (kbd "M-o") 'helm-swoop)
 (global-set-key (kbd "M-O") 'helm-swoop-back-to-last-point)
 
-;; isearch実行中にhelm-swoopに移行
+; isearch実行中にhelm-swoopに移行
 (define-key isearch-mode-map (kbd "C-o") 'helm-swoop-from-isearch)
 
 ;; Save buffer when helm-multi-swoop-edit complete
