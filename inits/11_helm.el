@@ -4,7 +4,7 @@
 (global-set-key (kbd "C-;") 'helm-for-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-s(global-set-key (kbd "M-i") 'helm-imenu)
+(global-set-key (kbd "M-i") 'helm-imenu)
 (global-set-key (kbd "C-x C-h j") 'helm-c-apropos)
 
 ;; helm-for-files の source から locate を外す
