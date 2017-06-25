@@ -5,3 +5,10 @@ eshell/history
 recentf
 url/*
 /.hl-save
+/ensime
+*.elc
+tmp/*
+
+bookmarks
+highlight.css
+target-install/
