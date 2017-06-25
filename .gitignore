@@ -12,3 +12,7 @@ tmp/*
 bookmarks
 highlight.css
 target-install/
+
+.DS_Store
+recentf*
+network-security.data
