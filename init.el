@@ -15,6 +15,8 @@
 (setq custom-theme-directory "~/.emacs.d/etc/color-theme/")
 (load-theme 'sango t)
 
+(setq ispell-program-name "/usr/local/bin/ispell")
+
 ;; init-loader
 (require 'init-loader)
 ;;(setq init-loader-show-log-after-init nil)
