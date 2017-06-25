@@ -53,6 +53,10 @@
 (depends-on "flycheck")
 (depends-on "flycheck-pos-tip")
 
+;; git
+(depends-on "magit")
+(depends-on "git-gutter-fringe")
+
 ;; ruby
 ;; (depends-on "ruby-mode")
 ;; (depends-on "robe-mode")
